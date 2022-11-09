@@ -28,7 +28,7 @@ class CredentialController extends ControllerBase
                                         'credential_tool/credential_tool'
                                 ],
                         ],
-                        '#cred_block' => 'my-react-target',
+                        '#cred_block' => 'credential-tool-target',
                 ];
                 return $build;
         }
