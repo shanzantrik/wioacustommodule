@@ -18,34 +18,18 @@ class CredentialController extends ControllerBase
          * @return array
          *   A simple renderable array.
          */
+
         public function credentialTool()
         {
-                return [
+                $build = [
                         '#theme' => 'cred_template',
-                        '#cred_var' => $this->t('Everythings working fine'),
+                        '#attached' => [
+                                'library' => [
+                                        'credential_tool/credential_tool'
+                                ],
+                        ],
+                        '#cred_block' => 'my-react-target',
                 ];
+                return $build;
         }
-        // public function credentialTool()
-        // {
-        //         $bid = 'credapp_block';
-        //         $block_content = BlockContent::load($bid);
-
-        //         $rendered_block = \Drupal::entityTypeManager()
-        //                 ->getViewBuilder('block_content')
-        //                 ->view($block_content);
-
-        //         $build = [
-        //                 '#theme' => 'cred_template',
-        //                 '#my_block' => $rendered_block,
-        //         ];
-
-        //         return $build;
-        // }
-        // public function credentialTool()
-        // {
-        //         $build = [];
-        //         $build['#attached']['library'][] = 'credential_tool/credential_tool_dev';
-        //         $build['#markup'] = '<div id="root"></div>';
-        //         return $build;
-        // }
 }
