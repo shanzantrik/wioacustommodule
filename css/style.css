@@ -1,0 +1,280 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+.h1,
+p {
+  margin-bottom: 11px;
+}
+
+#header {
+  background-color: #0071BC;
+  background-image: none;
+}
+
+
+
+.tooltip-link {
+  position: relative;
+  font-size: 14px;
+}
+
+
+.tooltip-link {
+  margin-left: 30px;
+}
+
+a.tooltip-link:before {
+  background-image: url('../images/heading.png');
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 5px;
+  left: -30px;
+  background-size: 20px;
+}
+
+.region-content h2 a {
+  color: #000;
+  font-size: 16px;
+}
+
+.region-content h2 a:hover {
+  border-bottom: none;
+}
+
+
+.layout-main {
+  margin-top: 25px;
+}
+
+.main-content .section {
+  border: 5px solid #0071bc;
+  min-height: 750px;
+  background-color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+#sidebar-second {
+  background-color: #0071bc;
+  margin-top: 25px;
+}
+
+.sidebar .section {
+  padding: 0px;
+}
+
+.sidebar .block {
+  background-color: #0071bc;
+  border-color: #0071bc;
+  color: #FFF;
+}
+
+.sidebar .block .content {
+  font-size: 11px;
+}
+
+.sidebar .block .content a {
+  color: #FFF;
+  text-decoration: underline;
+  border: none;
+}
+
+.sidebar .block .content a:hover {
+  color: #FFF;
+}
+
+select {
+  margin: 5px 0px 20px;
+  width: 575px;
+  padding: 5px 35px 5px 5px;
+  border: none;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../images/down-arrow.png') 98% / 4% no-repeat #eee;
+}
+
+p.desc {
+  margin-bottom: 0px;
+}
+
+button {
+  background-color: #0071bc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-right: 25px;
+  padding: 5px 10px;
+}
+
+@media (min-width: 851px) {
+  .layout-container {
+    max-width: 1140px;
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 851px) {
+  .layout-container {
+    padding: 0px 15px;
+  }
+
+  .region-primary-menu h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .main-content .section {
+    min-height: auto;
+  }
+
+  .left-col .region-header {
+    padding: 10px;
+  }
+
+  .right-col .region-secondary-menu {
+    padding: 10px;
+    padding-top: 30px;
+  }
+
+  .region-primary-menu h1 {
+    font-size: 25px;
+
+  }
+}
+
+@media (max-width: 969px) {
+  select {
+    width: 100%;
+  }
+}
+
+/* css for Print page */
+.header-print {
+  background-color: #0071BC;
+  height: 100px;
+}
+
+
+#credential_form div {
+  margin: 15px 0px 0px 0px;
+}
+
+#firstmessage,
+#secondmessage,
+#thirdmessage,
+#fourthmessage,
+#fifthmessage,
+.success,
+.error {
+  color: #FFF;
+  margin: 5px 0px 15px 50px !important;
+  padding: 10px 20px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#firstmessage,
+#fifthmessage {
+  background-color: #ecca22;
+  color: #000;
+}
+
+#secondmessage,
+#fourthmessage,
+#thirdmessage,
+.error {
+  background-color: #ea6f6f;
+  border: none;
+}
+
+.success {
+  background-color: #a7cc4d;
+  color: #000;
+}
+
+#secondmessage:before,
+#fourthmessage:before,
+#thirdmessage:before,
+.error:before,
+.success:before,
+#firstmessage:before,
+#fifthmessage:before {
+  background-image: url('../images/error.png');
+  content: " ";
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: -50px;
+}
+
+.success:before {
+  background-image: url('../images/success.png');
+}
+
+#firstmessage:before,
+#fifthmessage:before {
+  background-image: url('../images/warning.png');
+}
+
+#credential_form button {
+  margin-top: 15px;
+}
+
+#warning {
+  color: #D47509;
+}
+
+.desc {
+  font-weight: normal;
+}
+
+.skip-link {
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  margin-left: 10px;
+  padding: 8px;
+  color: #fff;
+  background-color: #002052;
+  border-radius: 3px;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  position: static;
+  left: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-decoration: underline;
+}
+
+.region-content h2 {
+  background-color: #fff;
+  font-size: 16px;
+  padding: 10px 0px;
+  font-weight: bold;
+  margin-left: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+a.tooltip-link:before {
+  top: 0px !important;
+}
